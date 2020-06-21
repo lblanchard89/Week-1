@@ -14,27 +14,28 @@ public static void main(String[] args) {
 			System.out.println(y);
 			y -= 3;
 		}
-		//loop that prints every other number from 1 to 1003
-		for (int z = 1; z <= 1003; z +=2) {
+		//loop that prints every other number from 1 to 100
+		for (int z = 1; z <= 100; z +=2) {
 			System.out.println(z);
 		}
 		
 		/*loop that prints every number from 0 to 100 with
 	    conditional statements*/
-		for (int i = 0; i <= 100; i++) {
-			String toPrint = "";
+		for (int i = 0; i <= 100; i++){
 			
-			if (i % 3  == 0) {
-				toPrint += "Hello";
-			}
-			if (i % 5 == 0) {
-				toPrint += "World";
-			}
-			if((i % 3 != 0) && (i % 5 != 0))  {
-				toPrint += i;
-			}
-			System.out.println(toPrint); 
 			
+			if (i % 3 == 0 && i % 5 != 0) {
+				System.out.println("Hello"); 
+			}
+			else if (i % 3 != 0 && i % 5 == 0) {
+				System.out.println("World");	
+			}
+			else if (i % 3 == 0 && i % 5 == 0) {
+				System.out.println("HelloWorld");
+			}
+			else {
+				System.out.println(i);
+			}
 		}
 	}
 }
